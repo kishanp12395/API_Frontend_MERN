@@ -101,9 +101,13 @@ const AddContact = ({ url, reload, setReload, setId, editData, setEditData }) =>
           className="modal fade show d-block"
           tabIndex="-1"
           aria-labelledby="addContactModalLabel"
-          aria-hidden="true"
+          aria-hidden="false"
           role="dialog"
-          style={{ backdropFilter: "blur(4px)", backgroundColor: "rgba(0, 0, 0, 0.3)", fontFamily: "monospace" }}
+          style={{ 
+            backdropFilter: "blur(4px)", 
+            backgroundColor: "rgba(0, 0, 0, 0.3)", 
+            fontFamily: "monospace" 
+        }}
         >
           <div className="modal-dialog">
             <div className="modal-content bg-dark text-white rounded-4 shadow-lg p-4">

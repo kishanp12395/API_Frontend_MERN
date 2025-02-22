@@ -25,8 +25,7 @@ const Contact = () => {
   const [id, setId] = useState("");
   const [editData, setEditData] = useState(null);
 
-  const url = "http://localhost:3000/api";
-
+  const url = import.meta.env.VITE_API_URL;
   // Fetch contacts from API
   const fetchData = async () => {
     try {
